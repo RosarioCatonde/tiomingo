@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descobre o perfil oficial do Tio Mingo, com acesso direto às suas redes sociais.">
+
+
+    <meta name="keywords" content="mini site, criador de conteúdo, link na bio, portfólio digital, Instagram, TikTok, redes sociais, visibilidade online, promoção digital, marketing pessoal, link único, apresentação online, criador de conteúdos Angola, site para influencers, página pessoal online, tráfego para redes sociais, site responsivo, Betinhas, Influenciador, Facebook">
+    <meta name="author" content="Tio Mingo">
+    <meta name="robots" content="index, follow">
+
+
+      <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Tio Mingo">
+    <meta property="og:description" content="Descobre o perfil oficial do Tio Mingo, com acesso direto às suas redes sociais.">
+    <meta property="og:image" content="https://tiomingo.vercel.app/perfil.jpg"> <!-- imagem de destaque -->
+    <meta property="og:url" content="https://tiomingo.vercel.app">
+    <meta property="og:type" content="website">
+
+
+
+                                 <!-- CSS -->
+                 <link rel="stylesheet" href="william.css">
+
+                                 <!-- Font -->
+        <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                                <!-- Favicon -->
+        <link rel="shortcut icon" href="link_80px.png" type="image/x-icon">
+
+
+
+
+
+                        <title>Tio Mingo</title>
+</head>
+<body>
+    <div class="overlay"></div>
+  <header>
+    <button id="themeToggle" class="theme-toggle">
+        <i id="themeIcon" class="fas fa-moon"></i>
+    </button>
+
+  
+
+    <div class="profile">
+        <div class="floating-button">
+            <input type="checkbox" id="toggle" hidden />
+            <label for="toggle" class="main-btn">
+                <i class="fas fa-plus"></i>
+            </label>
+    
+            <div class="action-btns">
+                <a href="pacotes.html" class="action" title="Preços">
+                    <i class="fas fa-tags"></i>
+                </a>
+
+                <a href="https://wa.me/244936584701?text=Olá,%20preciso%20de%20mais%20explicações!" class="action" title="WhatsApp">
+                    <i class="fas fa-user-tie"></i>
+                </a>
+            </div>
+        </div>
+
+       <img src="perfil.jpg" alt="Foto_de_Perfil" class="profile-img" />
+
+       <h1 class="pular" >Tio Mingo</h1>
+
+       <p>Criador de Conteúdos</p>
+       <div class="redes-sociais">
+            <a href="https://vm.tiktok.com/ZMSpjmkHT/"><i class="neon-link fab fa-tiktok" target="_blank"></i></a>
+
+             <a href="https://whatsapp.com/channel/0029Vb629vHLCoX7nmSDPd0Ah"><i class="neon-link fas fa-bullhorn" target="_blank"></i></a>
+
+            <a href="https://www.instagram.com/edvaldoandre_?igsh=MXNzZjk0OXQ5MHB0cQ=="><i class="neon-link fab fa-instagram" target="_blank"></i></a>
+       </div>
+       
+    </div>
+  </header>
+
+
+
+
+
+
+
+   
+
+    <section class="card-container">
+        <div class="card" data-count="22903">
+            <i class="fab fa-tiktok"></i>
+            <h3>Tiktok</h3>
+            <span class="count">0</span> seguidores
+        </div>
+
+        <div class="card" data-count="520">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <span class="count">0</span> seguidores
+        </div>
+    </section>
+
+
+
+  
+
+
+
+
+
+    <section id="sobre">
+        <h2 >Sobre</h2>
+        <p class="b" id="typewriter">
+             
+        </p>
+         <a href="https://wa.me/244949537041?text=Olá,%20como%20estás?" class="whatsapp-button">Falar no WhatsApp</a>
+    </section>
+ 
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="credito">
+            Desenvolvido por <a href="https://williamnott.vercel.app">William Nott</a>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+         const cards = document.querySelectorAll(".card");
+
+        cards.forEach(card => {
+            const countEl = card.querySelector(".count");
+            const target = +card.getAttribute("data-count");
+            let current = 0;
+
+        const increment = Math.ceil(target / 100);
+
+            const updateCount = () => {
+            current += increment;
+            if (current > target) current = target;
+            countEl.textContent = current.toLocaleString();
+            if (current < target) {
+                requestAnimationFrame(updateCount);
+            }
+            };
+
+            updateCount();
+          });
+        });
+        
+    </script>
+
+                    <script src="https://unpkg.com/scrollreveal"></script>
+                    <script defer src="william.js"></script>
+                    <script src="scroll.js"></script>
+                    <script src="script.js"></script>
+                     
+</body>
+</html>
